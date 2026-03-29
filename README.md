@@ -29,6 +29,36 @@ FrostOrthoをご購入いただきありがとうございます！
 トラックボール部分の設計など一部roBaを元に設計させていただきました。kuma_keyさんに大感謝です。  
 - 初期ファームウェア：[firmware](./firmware/)
   
+## 互換性のあるキーキャップ・トラックボール
+### キーキャップ
+17mm狭ピッチのキーキャップが使用できます。  
+- ↓ 確認済みのもの ↓
+  - Kotori   
+      Blankしか持っていないのですが、Shimaenagaも形状一緒なので使用できるはず！  
+    - [shakupan　Kotori Blank(Proto)](https://shakupan.booth.pm/items/6781056)
+    - [小鳥屋 - Kotori Keycaps　Kotori - Shimaenaga（White）](https://kotori-kcp.booth.pm/items/7468940)
+    - [小鳥屋 - Kotori Keycaps　Kotori - Shimaenaga（Black）](https://kotori-kcp.booth.pm/items/8129351)
+  - NarrowCap 17  
+      刻印ありなので慣れないうちはおすすめです！
+    - [ikusou　NarrowCap 17](https://booth.pm/ja/items/7406191)
+  - notra  
+      PBT製で質感がとてもいいです！
+      - [Plot.　notra](https://plotoftheprototype.com/products/notra)
+
+- ↓ 持っていないものの17mmのもの ↓
+  - [ゆshop　flat 17mmピッチ対応 印字キーキャップ](https://booth.pm/ja/items/7299687)
+  - [ゆshop　LAK chibi 17mmピッチ対応 印字キーキャップ](https://yukeyshop.booth.pm/items/8115099)
+  - [DecentKeyboards　Junana MX](https://shop.yushakobo.jp/products/10754?srsltid=AfmBOoocJNuhL-f-zhDAigy13w7EH5WUQrFOSST3yTodslcEmpUNUcH-)
+
+### トラックボール
+19mmのトラックボールが使用できます。
+- shakupanさん製の手染め球  
+    FrostOrtho付属のものより少し軽めです。muinoは白しか用意できないので、違う色を使いたい方はこちら！
+  - [shakupan　19mmトラックボール](https://shakupan.booth.pm/items/7667439)
+- beekeebさんの市販球  
+    市販球って言い方でいいんでしょうか、、？トラックボール用にちゃんと作られているボールで、19mmでは初めてのはず、ありがたいです。  
+    赤系色は動作確認できていますが、ダークグレーは正常に動作できていません。。どうにか使用できないか調整中です。
+  - [beekeeb　19mm トラックボール用交換ボール](https://shop.beekeeb.jp/products/19mm-trackball)
 
 ## 注意事項
 - 本品はリポバッテリーを使用しています。リポバッテリーには発火等の危険性があるため十分に注意してご使用ください。
