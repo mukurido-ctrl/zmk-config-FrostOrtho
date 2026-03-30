@@ -21,7 +21,7 @@
 
 // AMLから離脱しないキー
 &zip_temp_layer {
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <400>;
     excluded-positions = <
         16 // J 左クリック
         17 // K 左クリック
@@ -75,7 +75,7 @@
             &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT) // スクロール方向調整
             &zip_xy_to_scroll_mapper
             &zip_scroll_x_scaler 0 3 // X軸スクロール量0/3倍
-            &zip_scroll_y_scaler 2 3 // Y軸スクロール量2/3倍
+            &zip_scroll_y_scaler 1 3 // Y軸スクロール量1/3倍
         >;
     };
     scroller_x {
@@ -83,7 +83,7 @@
         input-processors = <
             &zip_scroll_transform (INPUT_TRANSFORM_X_INVERT) // スクロール方向調整
             &zip_xy_to_scroll_mapper
-            &zip_scroll_x_scaler 2 3 // X軸スクロール量2/3倍
+            &zip_scroll_x_scaler 1 3 // X軸スクロール量1/3倍
             &zip_scroll_y_scaler 0 3 // Y軸スクロール量0/3倍
         >;
     };
