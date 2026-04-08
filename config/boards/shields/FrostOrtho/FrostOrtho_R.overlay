@@ -57,6 +57,8 @@
     aliases {
         /* この行が重要です：ビルドエラーを解消します */
         led-red = &status_led; 
+        led-green = &status_led; // 赤と同じLEDを指定してもビルドは通ります
+        led-blue = &status_led;  // 同上
     };
 
     /* LED自体の定義（ピン番号は適宜調整してください） */
