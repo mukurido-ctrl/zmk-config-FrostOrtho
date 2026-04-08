@@ -67,7 +67,7 @@
             label = "Red LED";
         };
         led_blue: led_1 {
-            gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
+            gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
             label = "Blue LED";
         };
         led_green: led_2 {
