@@ -52,28 +52,28 @@
 };
 
 / {
-    /* 既存の定義（input_processors など）の近くに追加 */
-
+    /* ここで ZMK に「どの色がどのLEDノードか」を教えます */
     aliases {
-        /* この行が重要です：ビルドエラーを解消します */
-        led-red = &status_led; 
-        led-green = &status_green; // 赤と同じLEDを指定してもビルドは通ります
-        led-blue = &status_blue;  // 同上
+        led-red = &led_red;
+        led-green = &led_green;
+        led-blue = &led_blue;
     };
 
-    /* LED自体の定義（ピン番号は適宜調整してください） */
+    /* ここで各ピンの色を定義します */
     leds {
         compatible = "gpio-leds";
-        status_led: led_0 {
-            /* Seeeduino Xiao BLE の場合、P0.26(D0)などを指定する例が多いですが
-               余っているピンや、実際にLEDがつながっているピンに書き換えてください
-            */
-            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>; 
-            label = "Status LED";
+        led_red: led_0 {
+            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
+            label = "Red LED";
+        };
+        led_blue: led_1 {
             gpios = <&gpio0 27 GPIO_ACTIVE_LOW>;
-            label = "Status LED Blue";
-　　　　　　　　gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
-            label = "Status LED Blue";
+            label = "Blue LED";
+        };
+        led_green: led_2 {
+            gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+            label = "Green LED";
+        };
     };
 };
 
