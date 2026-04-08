@@ -52,6 +52,32 @@
 };
 
 / {
+    /* 既存の定義（input_processors など）の近くに追加 */
+
+    aliases {
+        /* この行が重要です：ビルドエラーを解消します */
+        led-red = &status_led; 
+    };
+
+    /* LED自体の定義（ピン番号は適宜調整してください） */
+    leds {
+        compatible = "gpio-leds";
+        status_led: led_0 {
+            /* Seeeduino Xiao BLE の場合、P0.26(D0)などを指定する例が多いですが
+               余っているピンや、実際にLEDがつながっているピンに書き換えてください
+            */
+            gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>; 
+            label = "Status LED";
+        };
+    };
+
+    /* 以下、既存の input_processors などが続く... */
+    input_processors {
+        /* ... */
+    };
+};
+
+/ {
     trackball_listener: trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
