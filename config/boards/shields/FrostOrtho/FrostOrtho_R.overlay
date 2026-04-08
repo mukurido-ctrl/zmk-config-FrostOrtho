@@ -1,4 +1,4 @@
-#include "FrostOrtho.dtsi"
+　#include "FrostOrtho.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -68,7 +68,7 @@
             /* Seeeduino Xiao BLE の場合、P0.26(D0)などを指定する例が多いですが
                余っているピンや、実際にLEDがつながっているピンに書き換えてください
             */
-            gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>; 
+            gpios = <&xiao_d 26 GPIO_ACTIVE_LOW>; 
             label = "Status LED";
         };
     };
