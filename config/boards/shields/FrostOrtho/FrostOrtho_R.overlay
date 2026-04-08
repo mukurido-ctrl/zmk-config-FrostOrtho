@@ -68,7 +68,7 @@
             /* Seeeduino Xiao BLE の場合、P0.26(D0)などを指定する例が多いですが
                余っているピンや、実際にLEDがつながっているピンに書き換えてください
             */
-            gpios = <&xiao_d 26 GPIO_ACTIVE_LOW>; 
+            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>; 
             label = "Status LED";
         };
     };
