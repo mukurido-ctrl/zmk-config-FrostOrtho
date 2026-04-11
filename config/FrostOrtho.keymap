@@ -42,7 +42,7 @@
             label = "SCREENSHOT";
         };
 
-        mac_screenshot1: new_macro {
+        mac_screenshot1: mac_screenshot1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -52,10 +52,10 @@
                 <&macro_release>,
                 <&kp LEFT_SHIFT &kp RIGHT_GUI &kp NUMBER_3>;
 
-            label = "NEW_MACRO";
+            label = "MAC_SCREENSHOT1";
         };
 
-        mac_screenshot2: new_macro {
+        mac_screenshot2: mac_screenshot2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -65,10 +65,10 @@
                 <&macro_release>,
                 <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_4>;
 
-            label = "NEW_MACRO";
+            label = "MAC_SCREENSHOT2";
         };
 
-        mac_screenshot3: new_macro {
+        mac_screenshot3: mac_screenshot3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -78,7 +78,7 @@
                 <&macro_release>,
                 <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_5>;
 
-            label = "NEW_MACRO";
+            label = "MAC_SCREENSHOT3";
         };
     };
 
