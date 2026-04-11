@@ -53,6 +53,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <300>;
         };
+        led_bt_status: led_bt_status {
+            compatible = "zmk,behavior-led-indicator";
+            #binding-cells = <0>;
+            /* bindings の指定を安全な名前にします */
+            bindings = <&led0>, <&led2>; 
+            event = "bt_status_changed";
+        };
         // Kyemap Editor用
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
