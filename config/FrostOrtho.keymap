@@ -16,7 +16,12 @@
 
 /* トラックボールの移動に対する設定 */
 &trackball_listener {
-    input-processors = <&zip_temp_layer 6 10000>; // 10秒
+    input-processors = <
+        &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT) // 方向
+        &zip_xy_scaler 2 3                            // 速度
+        &zip_temp_layer 6 10000                       // 10秒
+        &mouse_runtime_input_processor                // DYA用
+    >;
 };
 
 /* クリックに対する設定 */
