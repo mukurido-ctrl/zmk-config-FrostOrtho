@@ -99,16 +99,16 @@
         input-processors = <
             // &scroll_runtime_input_processor
             &zip_xy_to_scroll_mapper
-            &zip_scroll_x_scaler 0 3 // X軸スクロール量0/3倍
-            &zip_scroll_y_scaler (-1) 3 // Y軸スクロール量1/3倍
+            &zip_scroll_x_scaler 0 4 // X軸スクロール量0/4倍
+            &zip_scroll_y_scaler 1 4 // Y軸スクロール量1/4倍
         >;
     };
     scroller_x {
         layers = <7>; // 横スクロールレイヤー
         input-processors = <
             &zip_xy_to_scroll_mapper
-            &zip_scroll_x_scaler (-1) 3 // X軸スクロール量1/3倍
-            &zip_scroll_y_scaler 0 3 // Y軸スクロール量0/3倍
+            &zip_scroll_x_scaler 1 4 // X軸スクロール量1/4倍
+            &zip_scroll_y_scaler 0 4 // Y軸スクロール量0/4倍
         >;
     };
 };
