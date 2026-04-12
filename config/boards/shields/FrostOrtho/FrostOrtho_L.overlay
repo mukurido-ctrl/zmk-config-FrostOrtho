@@ -15,3 +15,29 @@
 &left_encoder {
     status = "okay";
 };
+
+/ {
+    /* ここで ZMK に「どの色がどのLEDノードか」を教えます */
+    aliases {
+        led-red = &led_red;
+        led-green = &led_green;
+        led-blue = &led_blue;
+    };
+
+    /* ここで各ピンの色を定義します */
+    leds {
+        compatible = "gpio-leds";
+        led_red: led_0 {
+            gpios = <&gpio0 26 GPIO_ACTIVE_LOW>;
+            label = "Red LED";
+        };
+        led_blue: led_1 {
+            gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+            label = "Blue LED";
+        };
+        led_green: led_2 {
+            gpios = <&gpio0 30 GPIO_ACTIVE_LOW>;
+            label = "Green LED";
+        };
+    };
+};
