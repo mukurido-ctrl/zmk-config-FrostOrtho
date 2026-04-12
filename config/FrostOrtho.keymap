@@ -14,9 +14,15 @@
     quick-tap-ms = <0>;
 };
 
-// AML クリックしたときにタイムアウトを延長
+/* トラックボールの移動に対する設定 */
+&trackball_listener {
+    input-processors = <&zip_temp_layer 6 10000>; // 10秒
+};
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 6 10000>; };
+/* クリックに対する設定 */
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 6 10000>; // 10秒
+};
 
 / {
     combos { compatible = "zmk,combos"; };
